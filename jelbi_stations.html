@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jelbi stations</title>
+
+    <link rel="stylesheet" href="./styles/main.css"/>
+  
+
+    
+
+<!-- link for leaflet map-->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha384-VzLXTJGPSyTLX6d96AxgkKvE/LRb7ECGyTxuwtpjHnVWVZs2gp5RDjeM/tgBnVdM"
+    crossorigin="anonymous"
+  />
+<!-- script  for leaflet map-->
+ <script
+    src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"
+    integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
+    crossorigin="anonymous"
+  ></script>
+  <script src=“https://kit.fontawesome.com/4f649e2dc1.js” crossorigin=“anonymous”></script>
+
+  </head>
+  <body>
+<!--jelbi headere and nav bar -->
+
+<header class="border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a href="./index.html"><img class="img-fluid logo" src="https://www.jelbi.de/wp-content/uploads/2019/09/BVG-Jelbi_Logo-RGB.jpg" alt="" height="0" width="180"></a>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-5">
+            <a class="nav-link active" aria-current="page" href="./Jelbi-app.html">Jelbi App</a>
+          <a class="nav-link text-black" href="./jelbi_stations.html">Jelbi Stations</a>
+          <a class="nav-link text-black" href="./faq.html">FAQ</a>
+              <a class="nav-link text-black" href="./contact&sign-up-form.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+<!-- jelbi station header-->
+    <section class="header__stations">
+    <div class="header__stations__heading">
+
+
+    <div class="header__stations__heading-main">
+    <img src="https://www.jelbi.de/wp-content/uploads/2019/08/190829_Jelbi-WM-ye-so.png" alt="jelbi-logo">
+  </div>
+  <h3 class="header__stations__heading-sub">THE stations.</h3>
+</div>
+    </section>
+
+
+
+<!-- jelbi station main content -->
+
+<section class="main__stations">
+
+  <h2 class="main__stations__heading">The movement movement.</h2>
+  <p class="main__stations__paragraph">Jelbi stations bring sharing services to S-Bahn and subway stations. Car, bicycle or scooter: no matter which you choose, here you can hire, return and charge vehicles. Jelbi stations also act as stops for taxis and on-demand shuttles. All in one place at the Jelbi station.</p>
+  <p class="main__stations__paragraph">Here, you can select a vehicle to meet your needs and conveniently book it in the Jelbi app. It means a seamless door-to-door experience, e.g. taking the underground to a Jelbi station and switching to a bicycle for the last mile home.</p>
+  <p class="main__stations__paragraph">We want to roll out Jelbi stations all over Berlin, from the city centre to the suburbs, so that in the future you can easily change to e-mopeds, bikes, e-scooters or cars at most S-Bahn and subway stations.</p>
+  <p class="main__stations__paragraph">The following hubs are available right now:</p>
+
+  <div class="stations__flex">
+    <div class="stations__flex--left">
+<h3 class="stations__flex--left-heading">Jelbi stations</h3>
+<p class="stations__flex--left-paragraph">Here you can rent, return and charge vehicles.</p>
+<div class="stations__flex--left-icons">
+  <p><img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Roller_small-so.png" alt="E-scooter" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Bike-so.png" alt="Bike" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Roller-so.png" alt="E-moped" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Car-so.png" alt="Car" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2020/12/taxi.png" alt="Taxi" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_BerlKoenig-so.png" alt="Ridesharing" data-cmp-info="9"> <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Bus-so.png" alt="Public Transit" data-cmp-info="9"></p>
+</div>
+<button class="stations__flex--left-button collapsible">Learn more &rarr;</button>
+<div class="content-button">
+ <ul>
+   <li>Jelbi station U Prinzenstraße, Gitschiner Straße 64.</li>
+   <li>Jelbi station S+U Schönhauser Allee, Greifenhagener Straße 20.</li>
+   <li>Jelbi station U Jakob-Kaiser-Platz, Klausingring 21.</li>
+   <li>Jelbi station Landsberger Allee/Petersburger Straße, Landsberger Allee 87.</li>
+   <li>Jelbi station U Ullsteinstraße, Ullsteinstraße 138.</li>
+   <li>Jelbi station S+U Jannowitzbrücke/Holzmarktstraße, Holzmarktstraße 14.</li>
+   <li>Jelbi station U Nollendorfplatz, Nollendorfplatz 5-7.</li>
+   <li>Jelbi station U Breitenbachplatz, Schildhornstraße.</li>
+   <li>Jelbi station Daumstraße/Rhenaniastraße, corner of Daumstraße/Rhenaniastraße.</li>
+   <li>Jelbi station S+U Lichtenberg, corner of Einbecker Straße/Skandinavische Straße.</li>
+ </ul>
+</div>
+    </div>
+
+    
+    <div class="stations__flex--right">
+      <h3 class="stations__flex--right-heading">Jelbi points</h3>
+      <p class="stations__flex--right-paragraph">Jelbi points are small hubs for all vehicles with just two wheels.</p>
+      <div class="stations__flex--right-icons">
+        <p><img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Roller_small-so.png" alt="E-scooter" data-cmp-info="9">
+           <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Bike-so.png" alt="Bike" data-cmp-info="9"> 
+           <img style="max-height: 35px; width: auto; vertical-align: sub; display: inline;margin-top:10px;" src="https://www.jelbi.de/wp-content/uploads/2019/09/190918_Roller-so.png" alt="E-moped" data-cmp-info="9">
+          </p>
+      </div>
+      <button class="stations__flex--right-button collapsible">Learn more &rarr;</button>
+      <div class="content-button">
+        <ul>The following points already exist:
+          <li>Jelbi Friedrichstraße</li>
+          <li>Jelbi cluster Waterkant</li>
+          <li>Jelbi Bundesdruckerei,</li>
+          <li>Jelbi U Mierendorffplatz</li>
+          <li>Jelbi cluster Biesdorf</li>
+          <li>Jelbi cluster Charité Campus Mitte and</li>
+          <li>Campus Benjamin Franklin</li>
+          <li>Jelbi at BVG locations</li>
+          <li>Jelbi Mendelssohn-Bartholdy-Park</li>
+        </ul>
+      </div>
+  
+  </div>
+  
+</div>
+
+
+  <p class="main__stations__paragraph color-primary">Simply enter “Jelbi Prinzenstraße” in the Jelbi app or Google Maps, for example. Why not give it a go?</p>
+
+  <p class="main__stations__paragraph color-primary"> Here is a list of our <span class="yellow-black">mobility partners</span>.</p>
+
+
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+    </section>
+
+
+
+
+
+<!-- jelbi station map -->
+
+    <article class="stations__map">
+        <h3 class="stations__map-heading">All Jelbi hubs at one glance on the map:</h3>
+        <div class="stations__map-mapframe" id="map" style="width: 75%; height:75%; border: 1px solid #AAA;">
+
+
+        </div>
+
+<!-- add scripts from both json files-->
+      <script type='text/javascript' src='./scripts/maps/leaf-demo.js'></script>
+      <script type='text/javascript' src='./scripts/maps/markers.js'></script>
+
+    </article>
+
+
+
+
+<!--jelbi station  gallery-->
+
+    <section class="stations__bottom_gallery">
+
+      <div class="stations__slideshow">
+        <div class="stations__slideshow-container">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2021/03/bvg-jelbi-station-haselhorst.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station U Haselhorst</div>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-1.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station U Prinzenstraße</div>
+      </div>
+      
+      <div class="mySlides ">
+        <div class="numbertext">3 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/08/jelbi-station-nollendorfplatz.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station U Nollendorfplatz</div>
+      </div>
+      
+      <div class="mySlides ">
+        <div class="numbertext">4 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-8.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Charging point at a Jelbi station</div>
+      </div>
+      
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-4.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station U Ullsteinstraße</div>
+      </div>
+      
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-11.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Carsharing vehicles at a Jelbi station</div>
+      </div>
+      
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-13.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station U Nollendorfplatz</div>
+      </div>
+      
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/08/jelbi-station-nollendorfplatz.jpg" style="width:100%">
+        <div class="stations__slideshow-text">E-mopeds and e-scooters</div>
+      </div>
+      
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Jelbi-Stationen-12.jpg" style="width:100%">
+        <div class="stations__slideshow-text">Jelbi station S+U Jannowitzbrücke</div>
+      </div>
+      
+     
+
+      <a class="stations__slideshow-prev" onclick="plusSlides(-1)">❮</a>
+      <a class="stations__slideshow-next" onclick="plusSlides(1)">❯</a>
+      
+        </div>
+     
+        <div class="slideshow_dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+
+      
+        <div class="back-to-top-wrapper-2">
+          <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"></a>
+        </div>
+
+
+  <footer>
+  <nav class="d-flex flex-wrap justify-content-center p-4 bg-jelbi-gray footer-links">
+    <a href="">Contact</a>
+    <a href="">Press</a>
+    <a href="">Imprint</a>
+    <a href="">Privacy Policy</a>
+    <a href="">Declaration of Accessibility</a>
+  </nav>
+  </footer>
+</section>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+    <!-- Custom scripts, edit above this line -->
+   <!--script for bootstrap-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+
+
+
+  <!-- end-->
+    <script src="scripts/index.js"></script>
+    
+ 
+  </body>
+</html>
