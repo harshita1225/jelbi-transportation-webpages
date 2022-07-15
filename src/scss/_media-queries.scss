@@ -1,0 +1,99 @@
+@media (min-width: 980px) {
+  .info-text {
+    animation: none;
+    margin: auto;
+  }
+
+  .section-5 {
+    display: flex;
+  }
+
+  .app-image {
+    height: 33rem;
+  }
+  .logo {
+    margin-left: 7rem;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .scooter,
+  .motobike,
+  .bike,
+  .car,
+  .taxi,
+  .minibus,
+  .bus {
+    animation: bike 10s linear infinite;
+  }
+
+  @keyframes bike {
+    0% {
+      transform: translateX(-900%);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: translateX(900%);
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .scooter,
+  .motobike,
+  .bike,
+  .car,
+  .taxi,
+  .minibus,
+  .bus {
+    animation: bike 10s linear infinite;
+  }
+
+  @keyframes bike {
+    0% {
+      transform: translateX(-1200%);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: translateX(1200%);
+    }
+  }
+}
+
+
+@media (max-width: 980px) {
+  video {
+    display: none;
+  }
+  .container1 {
+    background-image: url(https://www.jelbi.de/wp-content/uploads/2021/05/JLB_web-Header-mobile.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    position: static;
+  }
+  
+  .back-to-top-wrapper-2 {
+        position: absolute;
+        right: 0.25rem;
+        bottom: 0.5rem;
+        width: 4em;
+        pointer-events: none;
+      }
+}
+

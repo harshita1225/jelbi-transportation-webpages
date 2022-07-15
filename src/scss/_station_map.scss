@@ -1,0 +1,21 @@
+//jelbi station map section
+
+.stations__map{
+    background-color: #f0d722;
+   height:70vh;
+   
+
+
+    &-heading{
+        margin:0 10%;
+        padding:1.2rem;
+
+    }
+
+    &-mapframe{
+       display: block;
+       margin:2% auto;
+
+
+    }
+}

@@ -1,0 +1,155 @@
+$spacer: 1rem;
+$spacers: (
+  5: $spacer * 5,
+);
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+  margin-left: 1rem;
+}
+
+.navbar-nav, .nav-link {
+  padding-left: 1rem;
+}
+
+
+.nav-link:hover {
+    text-decoration: underline;
+    background-color: #f0d82257;
+    border: 1px dashed #262626;
+
+}
+
+.main-header {
+  font-weight: 700 !important;
+}
+
+.logo {
+  margin:1rem 0;
+}
+.info-text {
+  width: 50rem;
+  text-decoration: none;
+  margin: 0;
+  animation: sliding-text 20s linear infinite;
+}
+
+@keyframes sliding-text { 
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.info-text:hover {
+    font-style: italic;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+}
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app-container {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.mobility-partners {
+  text-decoration: none;
+}
+.mobility-partners:hover {
+  color: #F0D722;
+  text-decoration: underline;
+}
+
+.learn-more {
+  text-decoration: none;
+  background-color: #F0D722;
+  width: 8rem;
+  color: #262626;
+  margin: auto;
+  font-weight: bold;
+}
+
+.learn-more:hover{
+  background-color: #262626;
+  color:#F0D722;
+}
+
+.app-image {
+  width: 100%;
+  height: 20rem;
+  background-image: url(https://www.jelbi.de/wp-content/uploads/2021/06/jelbi-homescreen.png);
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+  color: #EAEAEA;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #EAEAEA;
+}
+
+body {
+  position: relative;
+}
+
+.go-to-top {
+  position: sticky;
+  display: flex;
+  bottom: 5%;
+  left: 90%;
+  width: 2rem;
+  height: 2rem;
+  background-color:#f0d822c8;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// Icon Animations
+
+.scooter, .motobike, .bike, .car, .taxi, .minibus, .bus {
+  animation: bike 10s linear infinite;
+}
+
+@keyframes bike { 
+  0% {
+    transform: translateX(-800%);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: translateX(800%);
+  }
+}

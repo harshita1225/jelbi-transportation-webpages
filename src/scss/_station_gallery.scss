@@ -1,0 +1,124 @@
+
+//jelbi stations gallery slideshow
+
+.stations__bottom_gallery{
+    position: relative;
+    
+}
+.stations__slideshow{
+
+background-image: url(https://www.jelbi.de/wp-content/uploads/2019/12/Jelbi-Station-von-oben-1.jpg);
+width:100%;
+
+filter: brightness(1);
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+right:0;
+top:0;
+z-index:-4;
+
+}
+
+
+
+/* Slideshow container */
+.stations__slideshow-container {
+  width:80%;
+  position: relative;
+  margin:15% auto 4%;
+}
+
+/* Next & previous buttons */
+.stations__slideshow-prev, .stations__slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.6rem;
+  margin-top: -2.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+  &:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+/* Position the "next button" to the right */
+.stations__slideshow-next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*animation on slides*/
+.mySlides{
+  animation: slidefade  1s 1;
+
+}
+
+@keyframes slidefade {
+
+  0%{
+    opacity: .5;
+
+  }
+100%{
+  opacity: 1;
+
+}  
+}
+
+/* Caption text */
+.stations__slideshow-text{
+  color: rgba(0,0,0,1);
+  background-image:linear-gradient(to right,orange, #f0d722,orange);
+  font-size: 1rem;
+  padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+ animation:slidefade 1s ease-in 1;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: .5rem 1.2rem;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slideshow_dots{
+  text-align: center;
+  margin-top:0;
+
+}
+.dot {
+  cursor: pointer;
+  height: .8rem;
+  width: .8rem;
+  margin: 0 .2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ 
+
+
+  &:hover{
+    background-color: #717171;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

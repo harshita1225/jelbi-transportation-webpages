@@ -1,0 +1,106 @@
+// station-main
+
+.main__stations{
+    margin:3rem 10%;
+    
+
+&__heading{
+    font-style:italic;
+    font-weight:600;
+}
+
+&__paragraph{
+    font-size: 16px;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+
+    
+
+    &::before{
+        content:'';
+        background-image: url("https://www.jelbi.de/wp-content/uploads/2021/05/Jelbi_Supersign_bl-ye_RGB.png");
+        background-size: cover;
+        width:1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        
+        display:inline-block;
+        margin-right: .5rem;
+        position: relative;
+        top:7px;
+         
+       
+    }
+}
+}
+.yellow-black{
+    background-color: #f0d722;
+    &:hover{
+        background-color: #000;
+        color: #f0d722;
+    }
+}
+
+.stations__flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+    //justify-content: space-between;
+    margin-bottom: 2rem;
+    
+
+    &--left,&--right{
+        border: 2px dashed  #f0d722;
+        box-shadow: 0 .5rem 2rem rgba(0,0,0, .5);
+        text-align: center;
+        padding:1rem 2rem;
+        flex:1 1 25rem;
+
+
+        @media screen and (max-width:1000px){
+            margin-top:3rem;
+            
+        }
+
+
+     
+        
+
+        &-heading{
+            font-size: 1.5rem;
+            font-weight: 700; 
+        }
+        &-icons-image1{
+            display: block;
+            width: 100%;
+
+    
+        }
+
+        
+
+        &-button{
+            margin:1rem 0;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: .2rem .5rem;
+            border:2px dashed black;
+            background-color:  #f0d722;
+
+
+            &:hover{
+                background-color: black;
+                color: #f0d722;
+            }
+        }
+    }
+}
+
+.content-button {
+    text-align: left;
+    font-weight: 500;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }

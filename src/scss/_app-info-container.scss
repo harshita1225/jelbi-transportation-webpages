@@ -1,0 +1,77 @@
+.app-info-container {
+  background: #f0d722;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.app-info {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  hr {
+    // color: rgb(6, 6, 6);
+    width: 100%;
+    height: 80px;
+    border-top: 3px solid black;
+    &:hover,
+    :focus {
+      visibility: hidden;
+    }
+  }
+}
+.app-info-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 315px;
+  margin: 50px 0;
+  border-radius: 12%;
+  transition: inherit 800ms ease-in-out;
+  &:hover {
+    box-shadow: 5px 5px 14px 5px rgb(133, 131, 131);
+    transform: rotate(10deg);
+  }
+}
+
+.app-info-img-div-1 {
+  background: url(../images/Jelbi-App-Login-English-1.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.app-info-img-div-2 {
+  background: url(../images/Jelbi-App-Homescreen-English-2.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.app-info-img-div-3 {
+  background: url(../images/Jelbi-App-Route-English-3.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+// h3 and paragraph styles
+
+.text-div {
+  margin-top: 30px;
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+  }
+  ul li {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+  }
+}

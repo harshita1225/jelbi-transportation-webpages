@@ -1,0 +1,32 @@
+{
+  "name": "jelbi-repro-final-project",
+  "version": "1.0.0",
+  "description": "Final project of UIB Module",
+  "main": "index.html",
+  "author": "Thilina, Cem, Harshita",
+  "scripts": {
+    "start": "run-p watch watch:styles",
+    "build": "run-s clean clean:styles build:styles copy",
+    "deploy": "run-s build publish",
+    "build:styles": "sass src/scss:src/styles",
+    "watch": "live-server src",
+    "watch:styles": "sass src/scss:src/styles --watch",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "latest",
+    "live-server": "latest",
+    "npm-run-all": "latest",
+    "sass": "latest"
+  }
+}

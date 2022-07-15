@@ -1,0 +1,154 @@
+.fixed-background {
+  background: url(../images/Jelbi_Fullscreencover_06.png) fixed no-repeat;
+}
+.fixed-background-2 {
+  background: url(../images/Jelbi_Fullscreencover_06.png) fixed no-repeat;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    ". . main ."
+    "footer footer footer footer";
+}
+header {
+  grid-area: header;
+}
+.footer-reg {
+  grid-area: footer;
+}
+.main-reg {
+  grid-area: main;
+}
+
+.registration-form {
+  padding: 50px 0;
+}
+
+.registration-form form {
+  background-color: rgb(117, 114, 114);
+  opacity: 0.9;
+  width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 0px 10px 10px #f0d722;
+}
+
+.registration-form .form-icon {
+  text-align: center;
+  background-color: #0d0d0e;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 110px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+.registration-form .item {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.registration-form .create-account {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  opacity: 1;
+}
+.registration-form .form-control {
+  outline: none;
+  transition: all 200ms ease-in;
+  &:focus {
+    background-color: black;
+    color: #f0d722;
+    outline: 2px solid #f0d722;
+    font-size: 1.3rem;
+  }
+}
+
+.registration-form .social-media {
+  width: 600px;
+  background-color: rgb(114, 111, 111);
+  opacity: 0.9;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #f8f8fe;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 0px 10px 10px #f0d722;
+}
+
+.registration-form .social-icons {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.registration-form .social-icons a {
+  font-size: 30px;
+  margin: 0 3px;
+  color: #f0d722;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  display: inline-block;
+  height: 48px;
+  text-align: center;
+  background-color: rgb(9, 9, 9);
+  line-height: 45px;
+}
+
+.registration-form .social-icons a:hover,
+.create-account:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-reg {
+  bottom: 0;
+}
+
+// tablet display
+@media (max-width: 725px) {
+  .registration-form form,
+  .registration-form .social-media {
+    width: 400px;
+    padding: 50px 20px;
+  }
+
+  .registration-form .form-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+// mobile display
+@media (max-width: 400px) {
+  .registration-form form,
+  .registration-form .social-media {
+    width: 220px;
+    padding: 20px;
+  }
+  .registration-form {
+    height: 300px;
+  }
+  .registration-form .form-icon {
+    padding-right: 60px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

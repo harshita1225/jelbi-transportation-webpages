@@ -1,0 +1,31 @@
+
+
+
+@use "video-container";
+@use "second-section";
+@use "base";
+@use "back-to-top-container";
+@use "form-sign-up-form";
+@use "app-info-container";
+@use "last-info-container";
+@use "media-quary";
+@use "station_reset";
+@use "station_header";
+@use "station_main";
+@use "station_map";
+@use "station_gallery";
+@use "faq";
+@use 'home-page';
+@use 'media-queries';
+
+$theme-colors: (
+    "jelbi-yellow": #F0D722,
+    "jelbi-pink": #BC6194,
+    "black": #000000,
+    "jelbi-gray": #262626,
+    "jelbi-light-gray": #EAEAEA,
+);
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap";

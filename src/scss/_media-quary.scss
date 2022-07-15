@@ -1,0 +1,111 @@
+// mobile design
+@media (max-width: 765px) {
+  // video containers
+  .video-sections {
+    height: 70%;
+    // z-index: 4000;
+  }
+  .ratio {
+    height: 420px;
+    background-image: url(../images/BVG-Jelbi_cover-RGB.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5000;
+  }
+}
+
+// tab design
+@media (min-width: 765px) {
+  // video containers
+  .video-sections {
+    height: 70%;
+    z-index: 4000;
+  }
+  .ratio {
+    height: 600px;
+    background-image: url(../images/BVG-Jelbi_cover-RGB.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5000;
+  }
+
+  //   paragraph containers
+  .para-1 {
+    margin: 30px 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .para-img-container {
+    gap: 2rem;
+  }
+  .para-image {
+    width: 180px;
+    height: 60px;
+  }
+
+  .para-2 {
+    height: 170px;
+  }
+  .para-2-div-1-para {
+    font-size: 1.8rem;
+  }
+  //   app info container
+  .app-info-img {
+    width: 250px;
+    height: 530px;
+    margin: 50px 0;
+  }
+  .text-div {
+    margin-top: 9rem;
+    h3 {
+      font-size: 1.5rem;
+      word-spacing: 0.2em;
+    }
+    ul li {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// desktop design
+
+@media (min-width: 970px) {
+  .video-sections {
+    height: 70%;
+  }
+  .ratio {
+    height: 800px;
+    z-index: 5;
+  }
+  .app-info-img {
+    width: 320px;
+    height: 680px;
+    margin: 20px 40px;
+  }
+
+  .app-info-img {
+    grid-area: div-img;
+  }
+  hr {
+    grid-area: hr;
+  }
+  .text-div {
+    grid-area: text-div;
+  }
+
+  .app-info {
+    display: grid;
+    grid-template-areas:
+      "div-img . text-div ."
+      "div-img . hr .";
+    gap: 60px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+}
