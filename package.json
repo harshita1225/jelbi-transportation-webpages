@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Final project of UIB Module",
   "main": "index.html",
-  "author": "Thilina, Cem, Harshita",
+  "author": "Harshita",
   "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
